@@ -1,10 +1,13 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Helvetica,Arial, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-body{
-  padding: 60px;
+body {
+    padding: 60px;
+}
+.list {
+    margin-top: 2rem;
 }
