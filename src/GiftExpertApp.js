@@ -1,23 +1,21 @@
 import React from 'react';
 import { useState } from 'react';
+import { AddCatagory } from './components/AddCatagory';
+import { GifGrid } from './components/GifGrid';
 
 export const GiftExpertApp = () => {
-    const dataArray = ['dragon ball', 'naruto', 'HunterxHunter'];
+    const dataArray = ['dragon ball'];
     const [categories, setcategories] = useState(dataArray);
-
-    //add new elemet to dataArray
-    const handleAdd = () => {
-        setcategories((cat) => [...cat, 'sao']);
-    };
 
     return (
         <div>
             <h2>Gift Expert app</h2>
+            <AddCatagory setcategories={setcategories} />
+
             <hr />
-            <button onClick={handleAdd}>addElement</button>
             <ol className='list'>
                 {categories.map((category) => {
-                    return <li key={category}>{category}</li>;
+                    return <GifGrid key={category} category={category} />;
                 })}
             </ol>
         </div>

@@ -11,3 +11,9 @@ body {
 .list {
     margin-top: 2rem;
 }
+input {
+    margin: 1rem 0rem;
+    padding: 0.5rem 0rem;
+    width: 100%;
+    color: grey;
+}
