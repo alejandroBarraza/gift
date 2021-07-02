@@ -4,8 +4,9 @@ import { AddCatagory } from './components/AddCatagory';
 import { GifGrid } from './components/GifGrid';
 
 export const GiftExpertApp = () => {
-    const dataArray = ['dragon ball'];
+    const dataArray = [];
     const [categories, setcategories] = useState(dataArray);
+    
 
     return (
         <div>

@@ -1,19 +1,22 @@
 
 import React,{useState,useEffect} from 'react';
+import { GiftGridItem } from './GiftGridItem';
 
 
 export const GifGrid = ({ category }) => {
+
+    const API_KEY = 'NteEFqYmRZK13pkumKPqO7RpeXscN39l'
     
+    const [imgs, setimgs] = useState([])
     
     useEffect(() => {
-        getGift()
+        getGift(category)
     }, [])
-    const [imgs, setimgs] = useState([""])
 
 
 
-    const getGift = async () => {
-        const url = 'https://api.giphy.com/v1/gifs/search?api_key=NteEFqYmRZK13pkumKPqO7RpeXscN39l&q=naruto&limit=10';
+    const getGift = async (imgToFetch) => {
+        const url = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${imgToFetch}&limit=10`;
         const response = await fetch(url);
         const {data} = await response.json();
         const gifs = data.map((gif) => {
@@ -28,19 +31,13 @@ export const GifGrid = ({ category }) => {
     
 
     return (
+
+        
         <div>
-            <h2>{category}</h2>
-            <ol>
-                {
-                    imgs.map(({id,title,url}) => {
-                        return [
-                            <li key={id}>{title} </li>,
-                            <img src={url} alt="#" />
-                        ]
-                    })
-                }
-            </ol>
-            
+            <h2>busqueda ralizada : {category}</h2>
+            {
+                imgs.map( (img) => <GiftGridItem key={img.id} {...img} />)
+            }   
         </div>
     );
 };
