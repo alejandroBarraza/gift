@@ -1,11 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 :root{
-    --background-color:#121212;
+    --background-color:#282C34;
+    --background-colors:#20232A;
     --primary:#BB96fc;
-    --primary-variant:#3700b3
+    --primary-variant:#3700b3;
+    --rcolor:#61CCC7;
 
 }
 html{
-    color: white;
+    color: #ebe9e9;
+    font-family: 'Poppins', sans-serif;
 }
 
 * {
@@ -21,6 +28,7 @@ body {
     width: 80%;
     margin: auto;
     background: var(--background-color);
+
 }
 .list {
     margin-top: 2rem;
@@ -33,9 +41,19 @@ input {
     width: 100%;
     color: white;
     border-radius: .4rem;
+    border: none;
+    border: 1px solid var(--rcolor);
+    outline:none;
+    
 }
+input:focus{
+    border: 1px solid rgb(23, 104, 197)
+
+}
+
 hr{
-    background: var(--primary);
+    background: var(--background-color);
+    border: none;
 }
 /* gifcontainer css class */
 
@@ -58,15 +76,22 @@ hr{
 
 
 .card{
-    border: 1px solid black;
+    margin-top: 1rem;
+    /* border: 1px solid black; */
     border-radius: .8rem;
     align-items: center;
     display: flex ;
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-
-
+    background-color: rgba(40, 44, 52, 0.205);
+    
+}
+.glassmorphismo{
+    /* background-color: rgba(255,255,255,0.30); */
+    box-shadow: 0px 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(300rem);
+    border: 1px solid rgba(255,255,255,0.18)
 }
 .card p{
     padding: 1rem 0rem;

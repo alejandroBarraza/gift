@@ -14,7 +14,7 @@ export const GifGrid = ({ category }) => {
 
     return (
         <>
-            <h2>busqueda ralizada : {category}</h2>
+            <h2> {category}</h2>
            
             <div className='card-container'>
                 {
