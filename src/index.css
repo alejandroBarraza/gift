@@ -1,24 +1,42 @@
+:root{
+    --background-color:#121212;
+    --primary:#BB96fc;
+    --primary-variant:#3700b3
+
+}
+html{
+    color: white;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica, Arial, sans-serif;
+
 }
 
 body {
-    padding: 60px;
+    padding: 60px 0px;
+    width: 80%;
+    margin: auto;
+    background: var(--background-color);
 }
 .list {
     margin-top: 2rem;
 }
 input {
+    
+    background: var(--background-color);
     margin: 1rem 0rem;
-    padding: 0.5rem 0rem;
+    padding: 0.8rem 0rem;
     width: 100%;
-    color: grey;
+    color: white;
     border-radius: .4rem;
 }
-
+hr{
+    background: var(--primary);
+}
 /* gifcontainer css class */
 
 /* .giftContainer{
