@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing gridGridItem in enzyme should match snapshot 1`] = `
+<div
+  className="card glassmorphismo"
+>
+  <p>
+    naruto
+  </p>
+  <img
+    alt="naruto"
+    src="https://localhost:3000"
+  />
+</div>
+`;
