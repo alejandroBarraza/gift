@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing <AddCategory setCategories={setCategories} /> component <AddCategory setCategories={setCategories}/> should match snapShot() 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <h2>
+    Add a new category
+  </h2>
+  <input
+    onChange={[Function]}
+    required={true}
+    type="text"
+    value=""
+  />
+</form>
+`;
