@@ -7,6 +7,7 @@ exports[`testing <AddCategory setCategories={setCategories} /> component <AddCat
   <h2>
     Add a new category
   </h2>
+  <p />
   <input
     onChange={[Function]}
     required={true}
