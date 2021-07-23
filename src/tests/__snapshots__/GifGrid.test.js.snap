@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing <GifGrid /> component should load item after use fetch in customHook UseFetchGifts 1`] = `
+<Fragment>
+  <h2>
+     
+    naruto
+  </h2>
+  <div
+    className="card-container"
+  >
+    <GiftGridItem
+      id={13123}
+      key="13123"
+      title="naruto"
+      url="htttps://www.gift/naruto.png"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`testing <GifGrid /> component should match <GifGrid category={cateogory}/>  with snapshot 1`] = `
+<Fragment>
+  <h2>
+     
+    naruto
+  </h2>
+  <div
+    className="card-container"
+  />
+</Fragment>
+`;
