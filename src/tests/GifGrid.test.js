@@ -3,6 +3,8 @@ import '../setupTests';
 import { shallow } from 'enzyme';
 import { GifGrid } from '../components/GifGrid';
 import { useFetchGifs } from '../hooks/useFetchGifs';
+import '@testing-library/jest-dom';
+import { GiftGridItem } from '../components/GiftGridItem';
 jest.mock('../hooks/useFetchGifs');
 
 describe('testing <GifGrid /> component', () => {
@@ -29,11 +31,15 @@ describe('testing <GifGrid /> component', () => {
                 url: 'htttps://www.gift/naruto.png',
             },
         ];
+
         useFetchGifs.mockReturnValue({
             data: imgs,
             loading: false,
         });
+
         wrapper = shallow(<GifGrid category={category} />);
         expect(wrapper).toMatchSnapshot();
+
+        expect(wrapper.find(GiftGridItem)).toHaveLength(1);
     });
 });
